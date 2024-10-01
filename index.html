@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Микрозелень №1 в Калининграде</title>
+    <link href="design/index/header.css" rel="stylesheet">
+    <link href="design/index/body.css" rel="stylesheet">
+    <link href="design/index/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-conteiner">   
+                <!-- Логотип -->  
+                <div class="logo-conteiner">
+                    <img class="logo" src="logo.png" alt="Микрозелень" class="info-image2"/>
+                </div> 
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li><a href="#"><i class="fas fa-leaf"></i> Микрозелень</a></li>
+                        <li><a href="#"><i class="fas fa-archive"></i> Товары из Сибири</a></li>
+                        <li><a href="#"><i class="fas fa-truck"></i> Доставка</a></li>
+                        <li><a href="#"><i class="fas fa-address-book"></i> Контакты</a></li>
+                    </ul>
+                    
+                </nav>
+                <div class="menu-icon" onclick="toggleMenu()">   
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="navbar-list">
+            <li><a href="#"><i class="fas fa-leaf"></i> Микрозелень</a></li>
+            <li><a href="#"><i class="fas fa-archive"></i> Товары из Сибири</a></li>
+            <li><a href="#"><i class="fas fa-truck"></i> Доставка</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i> Контакты</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="container-column">          
+            <div class="info-box">
+                <img src="k.png" alt="Микрозелень" class="info-image"/>
+                <div class="info">Зелень 1</div>
+                <div class="info">Микрозелень ростков гороха</div>
+                <div class="info-2">🍀🍀🍀🍀🍀</div>
+                <a href="другая_страница.html" class="buy-button">Купить</a>
+            </div>    
+            <div class="info-box" >Информация о зелени 2</div>    
+            <div class="info-box">Информация о зелени 3</div>
+            <div class="info-box">Информация о зелени 4</div>
+        </div>
+        <div class="container-column">  
+            <div class="info-box">Информация о зелени 5</div>
+            <div class="info-box">Информация о зелени 6</div>    
+            <div class="info-box">Информация о зелени 7</div>
+            <div class="info-box">Информация о зелени 8</div>
+        </div>
+        <div class="container-column">       
+            <div class="info-box">Информация о зелени 1</div>           
+            <div class="info-box">Информация о зелени 2</div>            
+            <div class="info-box">Информация о зелени 3</div>                        
+            <div class="info-box">Информация о зелени 4</div>
+        </div>
+        <div class="container-column px">            
+            <div class="info-box">Информация о зелени 1</div>           
+            <div class="info-box">Информация о зелени 2</div>            
+            <div class="info-box">Информация о зелени 3</div>                        
+            <div class="info-box">Информация о зелени 4</div>
+        </div>
+        
+    </main>
+    <footer >
+        qwe
+    </footer>
+    <script >function toggleMenu() {
+        var menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
+    </script>
+</body>
