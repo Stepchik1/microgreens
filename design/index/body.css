@@ -5,8 +5,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: block;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #e9e3e3; /* Светлый фон для контента */
@@ -84,6 +83,17 @@ main {
 }
 
 
+.delivery-info-box {
+    display: flex;
+    margin: 0 auto; /* Центрирование блока (если ширина задана) */
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(165, 224, 170); /* Цвет фона для визуализации */
+    padding: 20px; /* Отступы вокруг текста */
+    margin-top: 20px; /* Дополнительный отступ сверху, чтобы отделить от других ячеек */
+    text-align: center; /* Выравнивание текста по центру */
+    border-top: 1px solid #313030; /* Рамка для визуализации */
+}
 
 @media (min-width: 1030px) and (max-width: 1360px) { 
    .px{
@@ -93,6 +103,13 @@ main {
     justify-content: center;
    }
  }
+
+
+
+
+
+
+
 
 
 
