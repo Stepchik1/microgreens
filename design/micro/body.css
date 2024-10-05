@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Светлый фон для контента */
+    
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    gap: 50px;
+}
+.gallery {
+    width: 900px;
+    
+
+    text-align: center;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+  
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+
+.info-micro{
+    display: block;
+    padding: 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap:10px;
+    font-size: 18px;
+    
+}
+.font-w{
+    font-weight: bold;
+    font-size: 22px;
+}
+.info-micro p{
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 6px;
+    
+}
+
+.buy button{
+    width: 150px;
+    border-radius: 6px;
+    font-size: 22px;
+    color: aliceblue;
+    border: 2px solid black;
+    background-color:darkblue
+}
+.buy{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    
+}
+.buy p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 1300px) {
+    .info-micro{ 
+        margin-top: 0px;
+        
+    }
+
+    .gallery {
+        width: 700px;
+        margin-right: 0;
+    }
+
+    main {
+        margin: 0px ;
+        gap:20px;
+    }
+}
+@media (max-width: 1000px) {
+    main {
+        gap: 10px;
+        flex-direction: column;
+       
+        margin-right: 0px;
+    }
+    .info-micro{
+        margin-top: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    .gallery {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+
+
+
